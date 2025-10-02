@@ -24,4 +24,9 @@ public class PaystackConfiguration
     /// Enable request/response logging for debugging
     /// </summary>
     public bool EnableLogging { get; set; } = false;
+
+    /// <summary>
+    /// The logging level for HTTP requests and responses (default: Information)
+    /// </summary>
+    public LogLevel LogLevel { get; set; } = LogLevel.Information;
 }
